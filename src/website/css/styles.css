@@ -8,6 +8,25 @@ h1 {
     color: #333;
 }
 
+#filter-panel {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group {
+    margin-bottom: 10px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-group select, #filter-button {
+    width: 200px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -22,6 +41,15 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+th[data-order="asc"]::after {
+    content: " ▲";
+}
+
+th[data-order="desc"]::after {
+    content: " ▼";
 }
 
 tr:nth-child(even) {
@@ -35,4 +63,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#property-details-table th, #property-details-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
 }
