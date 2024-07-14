@@ -10,7 +10,6 @@ def scrape_with_playwright(playwright: Playwright) -> None:
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://www.pastport.mtc.gov.on.ca/OHPWeb/ohp/ohpSearch.xhtml")
-    page.locator("[id=\"ohpSearchForm\\:resultSize\"]").select_option("40")
 
     page_number = 1
     os.makedirs("pages/search", exist_ok=True)
@@ -28,8 +27,8 @@ def scrape_with_playwright(playwright: Playwright) -> None:
                 file.write(content)
             print(f"Saved page {page_number} content.")
 
-            for link_count in range(2,42):
-                link = page.locator(f'#ohpSearchForm > div:nth-child(6) > table > tbody > tr:nth-child({link_count}) > td:nth-child(4) > a')
+            for link_count in range(1,11):
+                link = page.locator(f'#ohpSearchForm > div:nth-child(6) > table > tbody > tr:nth-child({link_count+1}) > td:nth-child(4) > a')
                 link.click()
                 page.wait_for_load_state('networkidle')
                 overview_page_content = page.content()
@@ -38,13 +37,13 @@ def scrape_with_playwright(playwright: Playwright) -> None:
                 print(f"Saved overview page {page_number}_{link_count} content.")
                 link_count += 1
                 print(link)
-                page.get_by_role("link", name="Search for Heritage Property >").click()
+                page.go_back()
                 page.wait_for_load_state('networkidle')
                 
 
             print("Attempting to find 'next Page' button.")
             next_page_button = page.get_by_role("link", name="next Page")
-            if next_page_button:
+            if next_page_button.count():
                 print("Clicking 'next Page' button.")
                 with page.expect_navigation():
                     next_page_button.click()
@@ -57,7 +56,7 @@ def scrape_with_playwright(playwright: Playwright) -> None:
             import traceback
             print(traceback.format_exc())
             print(f"An error occurred on page {page_number}: {e}")
-            break
+            exit()
 
     context.close()
     browser.close()
