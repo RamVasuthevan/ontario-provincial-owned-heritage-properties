@@ -151,7 +151,7 @@ def write_to_json(data: list, output_json: str) -> None:
 
 # Extract data with BeautifulSoup
 search_data = extract_search_pages_with_bs4('pages/search/')
-write_to_json(search_data, '../../output/heritage_properties.json')
+write_to_json(search_data, '../../output/search.json')
 
 overview_data = extract_overview_pages_with_bs4('pages/overview/')
-write_to_json(overview_data, '../../output/heritage_overview.json')
+write_to_json(overview_data, '../../output/overview.json')
