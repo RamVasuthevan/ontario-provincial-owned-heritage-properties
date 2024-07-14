@@ -3,31 +3,57 @@ import os
 from playwright.sync_api import Playwright, sync_playwright, expect
 from bs4 import BeautifulSoup
 import csv
+import time
+
+def wait_for_stable_content(page):
+    max_retries = 5
+    retries = 0
+    content = None
+    while retries < max_retries:
+        try:
+            content = page.content()
+            break
+        except Exception as e:
+            retries += 1
+            time.sleep(1)
+    if content is None:
+        raise Exception("Unable to retrieve content after multiple retries.")
+    return content
 
 def scrape_with_playwright(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://www.pastport.mtc.gov.on.ca/OHPWeb/ohp/ohpSearch.xhtml")
+    page.locator("[id=\"ohpSearchForm\\:resultSize\"]").select_option("40")
 
     page_number = 1
     os.makedirs("pages/search", exist_ok=True)
 
     while True:
         try:
-            # Save the current page content
+            # Ensure the page is fully loaded
+            page.wait_for_load_state('load')
+            # Wait for the content to be stable
+            print(f"Saving page {page_number} content.")
+            content = wait_for_stable_content(page)
             with open(f"pages/search/page_{page_number}.html", "w", encoding="utf-8") as file:
-                file.write(page.content())
+                file.write(content)
+            print(f"Saved page {page_number} content.")
 
+            print("Attempting to find 'next Page' button.")
             next_page_button = page.get_by_role("link", name="next Page")
             if next_page_button:
-                next_page_button.click()
-                page.wait_for_timeout(1000)  # wait for 1 second for the page to load
+                print("Clicking 'next Page' button.")
+                with page.expect_navigation():
+                    next_page_button.click()
+                print(f"Clicked 'next Page' button on page {page_number}.")
                 page_number += 1
             else:
+                print("No 'next Page' button found.")
                 break
         except Exception as e:
-            print("No more next page button found or an error occurred:", e)
+            print(f"An error occurred on page {page_number}: {e}")
             break
 
     context.close()
