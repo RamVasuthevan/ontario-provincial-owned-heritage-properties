@@ -298,4 +298,4 @@ dist
 
 # Project specific
 
-pages/
+src/scrape/pages/

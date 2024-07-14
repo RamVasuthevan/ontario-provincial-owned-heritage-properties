@@ -1,12 +1,14 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
-
-[packages]
-playwright = "*"
 
 [dev-packages]
 
+[packages]
+playwright = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+
 [requires]
-python_version = "3.12"
+python_version = "3.9"
