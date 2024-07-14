@@ -58,6 +58,7 @@ def extract_data_with_bs4(directory: str) -> list:
     return data
 
 def write_to_csv(data: list, output_csv: str) -> None:
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
     # Write the data to a CSV file
     with open(output_csv, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
@@ -72,4 +73,4 @@ with sync_playwright() as playwright:
 
 # Extract data with BeautifulSoup
 data = extract_data_with_bs4('pages/search/')
-write_to_csv(data, 'heritage_properties.csv')
+write_to_csv(data, '../../output/heritage_properties.csv')
