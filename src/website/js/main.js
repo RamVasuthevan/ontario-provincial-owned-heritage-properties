@@ -2,18 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('data/overview.json')
         .then(response => response.json())
         .then(data => {
-            const propertyList = document.getElementById('property-list');
+            const propertyTableBody = document.querySelector('#property-table tbody');
             const propertyDetails = new URLSearchParams(window.location.search).get('property');
 
-            if (propertyList) {
+            if (propertyTableBody) {
                 data.forEach((property, index) => {
-                    const propertyItem = document.createElement('div');
-                    propertyItem.className = 'property-item';
-                    propertyItem.innerHTML = `
-                        <h2><a href="property.html?property=${index}">${property.property_name}</a></h2>
-                        <p>${property.recognition_type}</p>
+                    const propertyRow = document.createElement('tr');
+                    propertyRow.innerHTML = `
+                        <td><a href="property.html?property=${index}">${property.property_name}</a></td>
+                        <td>${property.recognition_type}</td>
+                        <td>${property.address}</td>
+                        <td>${property.authority_name}</td>
                     `;
-                    propertyList.appendChild(propertyItem);
+                    propertyTableBody.appendChild(propertyRow);
                 });
             }
 
