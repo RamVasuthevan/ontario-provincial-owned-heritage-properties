@@ -5,21 +5,6 @@ from bs4 import BeautifulSoup
 import csv
 import time
 
-def wait_for_stable_content(page):
-    max_retries = 5
-    retries = 0
-    content = None
-    while retries < max_retries:
-        try:
-            content = page.content()
-            break
-        except Exception as e:
-            retries += 1
-            time.sleep(1)
-    if content is None:
-        raise Exception("Unable to retrieve content after multiple retries.")
-    return content
-
 def scrape_with_playwright(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
@@ -29,6 +14,7 @@ def scrape_with_playwright(playwright: Playwright) -> None:
 
     page_number = 1
     os.makedirs("pages/search", exist_ok=True)
+    os.makedirs("pages/overview", exist_ok=True)
 
     while True:
         try:
@@ -36,10 +22,25 @@ def scrape_with_playwright(playwright: Playwright) -> None:
             page.wait_for_load_state('load')
             # Wait for the content to be stable
             print(f"Saving page {page_number} content.")
-            content = wait_for_stable_content(page)
+            page.wait_for_load_state('networkidle')
+            content =  page.content()
             with open(f"pages/search/page_{page_number}.html", "w", encoding="utf-8") as file:
                 file.write(content)
             print(f"Saved page {page_number} content.")
+
+            for link_count in range(2,42):
+                link = page.locator(f'#ohpSearchForm > div:nth-child(6) > table > tbody > tr:nth-child({link_count}) > td:nth-child(4) > a')
+                link.click()
+                page.wait_for_load_state('networkidle')
+                overview_page_content = page.content()
+                with open(f"pages/overview/{page_number}_{link_count}.html", "w", encoding="utf-8") as file:
+                    file.write(overview_page_content)
+                print(f"Saved overview page {page_number}_{link_count} content.")
+                link_count += 1
+                print(link)
+                page.get_by_role("link", name="Search for Heritage Property >").click()
+                page.wait_for_load_state('networkidle')
+                
 
             print("Attempting to find 'next Page' button.")
             next_page_button = page.get_by_role("link", name="next Page")
@@ -53,6 +54,8 @@ def scrape_with_playwright(playwright: Playwright) -> None:
                 print("No 'next Page' button found.")
                 break
         except Exception as e:
+            import traceback
+            print(traceback.format_exc())
             print(f"An error occurred on page {page_number}: {e}")
             break
 
