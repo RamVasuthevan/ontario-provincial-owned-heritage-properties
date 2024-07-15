@@ -8,38 +8,30 @@
 </head>
 <body>
     <h1>Heritage Properties</h1>
-    
-    <div id="filter-panel">
-        <div class="filter-group">
-            <label for="recognition-type-filter">Recognition Type:</label>
-            <select id="recognition-type-filter">
-                <option value="">All</option>
-                <!-- Options will be dynamically populated -->
-            </select>
-        </div>
-        
-        <div class="filter-group">
-            <label for="authority-name-filter">Authority Name:</label>
-            <select id="authority-name-filter">
-                <option value="">All</option>
-                <!-- Options will be dynamically populated -->
-            </select>
-        </div>
-        
+    <div>
+        <label for="recognition-type-filter">Recognition Type:</label>
+        <select id="recognition-type-filter">
+            <option value="">All</option>
+        </select>
+        <label for="authority-name-filter">Authority Name:</label>
+        <select id="authority-name-filter">
+            <option value="">All</option>
+        </select>
         <button id="filter-button">Filter</button>
     </div>
-
     <table id="property-table">
         <thead>
             <tr>
-                <th data-column="property_name" data-order="desc">Property Name</th>
-                <th data-column="recognition_type" data-order="desc">Recognition Type</th>
-                <th data-column="address" data-order="desc">Address</th>
-                <th data-column="authority_name" data-order="desc">Authority Name</th>
+                <th data-column="Property Name" data-order="asc">Property Name</th>
+                <th data-column="Authority Name" data-order="asc">Authority Name</th>
+                <th data-column="Other Name(s):" data-order="asc">Other Name(s)</th>
+                <th data-column="Recognition Type:" data-order="asc">Recognition Type</th>
+                <th data-column="Current Functional Category:" data-order="asc">Current Functional Category</th>
+                <th data-column="Current Functional Type:" data-order="asc">Current Functional Type</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Property rows will be dynamically added here -->
+            <!-- Data will be populated here -->
         </tbody>
     </table>
     <script src="js/main.js"></script>

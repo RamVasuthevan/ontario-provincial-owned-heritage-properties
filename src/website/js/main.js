@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const filterButton = document.getElementById('filter-button');
             
             const populateFilters = () => {
-                const recognitionTypes = [...new Set(data.map(item => item.recognition_type))];
-                const authorityNames = [...new Set(data.map(item => item.authority_name))];
+                const recognitionTypes = [...new Set(data.map(item => item['Recognition Type:']).flat())];
+                const authorityNames = [...new Set(data.map(item => item['Authority Name']))];
                 
                 recognitionTypes.forEach(type => {
                     const option = document.createElement('option');
@@ -31,10 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 data.forEach((property, index) => {
                     const propertyRow = document.createElement('tr');
                     propertyRow.innerHTML = `
-                        <td><a href="property.html?property=${index}">${property.property_name}</a></td>
-                        <td>${property.recognition_type}</td>
-                        <td>${property.address}</td>
-                        <td>${property.authority_name}</td>
+                        <td><a href="property.html?property=${index}">${property['Property Name']}</a></td>
+                        <td>${property['Authority Name']}</td>
+                        <td>${property['Other Name(s):']}</td>
+                        <td>${property['Recognition Type:'].join('<br>')}</td>
+                        <td>${property['Current Functional Category:']}</td>
+                        <td>${property['Current Functional Type:']}</td>
                     `;
                     propertyTableBody.appendChild(propertyRow);
                 });
@@ -42,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const sortData = (column, order) => {
                 data.sort((a, b) => {
-                    const valueA = a[column].toUpperCase();
-                    const valueB = b[column].toUpperCase();
+                    const valueA = (a[column] || "").toUpperCase();
+                    const valueB = (b[column] || "").toUpperCase();
                     if (valueA < valueB) {
                         return order === 'asc' ? -1 : 1;
                     }
@@ -60,11 +62,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 let filteredData = data;
 
                 if (recognitionType) {
-                    filteredData = filteredData.filter(item => item.recognition_type === recognitionType);
+                    filteredData = filteredData.filter(item => item['Recognition Type:'].includes(recognitionType));
                 }
 
                 if (authorityName) {
-                    filteredData = filteredData.filter(item => item.authority_name === authorityName);
+                    filteredData = filteredData.filter(item => item['Authority Name'] === authorityName);
                 }
 
                 renderTable(filteredData);

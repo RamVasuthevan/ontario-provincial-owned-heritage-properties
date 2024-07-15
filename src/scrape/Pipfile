@@ -9,6 +9,8 @@ verify_ssl = true
 playwright = "*"
 beautifulsoup4 = "*"
 lxml = "*"
+pandas = "*"
+xlrd = "*"
 
 [requires]
 python_version = "3.9"

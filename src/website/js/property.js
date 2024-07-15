@@ -2,28 +2,57 @@ document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const propertyIndex = urlParams.get('property');
 
-    if (propertyIndex !== null) {
-        fetch('data/overview.json')
-            .then(response => response.json())
-            .then(data => {
-                const property = data[propertyIndex];
-                if (property) {
-                    document.getElementById('property-name').textContent = property.property_name;
-                    document.getElementById('other-names').textContent = property.other_name;
-                    document.getElementById('recognition-type').textContent = property.recognition_type;
-                    document.getElementById('address').textContent = property.address;
-                    document.getElementById('authority-name').textContent = property.authority_name;
-                    document.getElementById('description-of-property').textContent = property.description_of_property;
-                    document.getElementById('statement-of-value').textContent = property.statement_of_value;
-                    document.getElementById('description-of-attributes').textContent = property.description_of_attributes;
-                    document.getElementById('current-functional-category').textContent = property.current_functional_category;
-                    document.getElementById('current-functional-type').textContent = property.current_functional_type;
-                } else {
-                    console.error('Property not found.');
-                }
-            })
-            .catch(error => console.error('Error loading JSON:', error));
-    } else {
-        console.error('No property index specified in URL.');
-    }
+    fetch('data/overview.json')
+        .then(response => response.json())
+        .then(data => {
+            const property = data[propertyIndex];
+            const propertyDetails = document.getElementById('property-details');
+
+            if (property) {
+                propertyDetails.innerHTML = `
+                    <h2>${property['Property Name']}</h2>
+                    <table>
+                        <tr>
+                            <th>Other Name(s)</th>
+                            <td>${property['Other Name(s):']}</td>
+                        </tr>
+                        <tr>
+                            <th>Recognition Type</th>
+                            <td>${property['Recognition Type:'].join(', ')}</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>${property['Address:']}</td>
+                        </tr>
+                        <tr>
+                            <th>Authority Name</th>
+                            <td>${property['Authority Name']}</td>
+                        </tr>
+                        <tr>
+                            <th>Description of Property</th>
+                            <td>${property['Description of Property:']}</td>
+                        </tr>
+                        <tr>
+                            <th>Statement of Cultural Heritage Value or Interest</th>
+                            <td>${property['Statement of Cultural Heritage Value or Interest:']}</td>
+                        </tr>
+                        <tr>
+                            <th>Description of Heritage Attributes</th>
+                            <td>${property['Description of Heritage Attributes:']}</td>
+                        </tr>
+                        <tr>
+                            <th>Current Functional Category</th>
+                            <td>${property['Current Functional Category:']}</td>
+                        </tr>
+                        <tr>
+                            <th>Current Functional Type</th>
+                            <td>${property['Current Functional Type:']}</td>
+                        </tr>
+                    </table>
+                `;
+            } else {
+                propertyDetails.innerHTML = '<p>Property not found.</p>';
+            }
+        })
+        .catch(error => console.error('Error loading JSON:', error));
 });
