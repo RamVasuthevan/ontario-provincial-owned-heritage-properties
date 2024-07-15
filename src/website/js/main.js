@@ -1,92 +1,68 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const recognitionFilter = document.getElementById('filter-recognition');
+    const authorityFilter = document.getElementById('filter-authority');
+    const applyFiltersButton = document.getElementById('apply-filters');
+    const propertiesTableBody = document.getElementById('properties-table').getElementsByTagName('tbody')[0];
+
     fetch('data/overview.json')
         .then(response => response.json())
         .then(data => {
-            const propertyTableBody = document.querySelector('#property-table tbody');
-            const recognitionTypeFilter = document.getElementById('recognition-type-filter');
-            const authorityNameFilter = document.getElementById('authority-name-filter');
-            const filterButton = document.getElementById('filter-button');
-            
-            const populateFilters = () => {
-                const recognitionTypes = [...new Set(data.map(item => item['Recognition Type:']).flat())];
-                const authorityNames = [...new Set(data.map(item => item['Authority Name']))];
-                
-                recognitionTypes.forEach(type => {
-                    const option = document.createElement('option');
-                    option.value = type;
-                    option.textContent = type;
-                    recognitionTypeFilter.appendChild(option);
-                });
+            // Populate filters
+            const recognitionTypes = new Set();
+            const authorityNames = new Set();
 
-                authorityNames.forEach(name => {
-                    const option = document.createElement('option');
-                    option.value = name;
-                    option.textContent = name;
-                    authorityNameFilter.appendChild(option);
-                });
-            };
+            data.forEach(property => {
+                property['Recognition Type:'].forEach(type => recognitionTypes.add(type.trim()));
+                authorityNames.add(property['Authority Name'].trim());
+            });
 
-            const renderTable = (data) => {
-                propertyTableBody.innerHTML = '';
+            recognitionTypes.forEach(type => {
+                const option = document.createElement('option');
+                option.value = type;
+                option.textContent = type;
+                recognitionFilter.appendChild(option);
+            });
+
+            authorityNames.forEach(name => {
+                const option = document.createElement('option');
+                option.value = name;
+                option.textContent = name;
+                authorityFilter.appendChild(option);
+            });
+
+            // Render table
+            function renderTable(data) {
+                propertiesTableBody.innerHTML = '';
                 data.forEach((property, index) => {
-                    const propertyRow = document.createElement('tr');
-                    propertyRow.innerHTML = `
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
                         <td><a href="property.html?property=${index}">${property['Property Name']}</a></td>
                         <td>${property['Authority Name']}</td>
-                        <td>${property['Other Name(s):']}</td>
+                        <td>${property['Other Name(s):'].join('<br>')}</td>
                         <td>${property['Recognition Type:'].join('<br>')}</td>
                         <td>${property['Current Functional Category:']}</td>
                         <td>${property['Current Functional Type:']}</td>
                     `;
-                    propertyTableBody.appendChild(propertyRow);
+                    propertiesTableBody.appendChild(row);
                 });
-            };
+            }
 
-            const sortData = (column, order) => {
-                data.sort((a, b) => {
-                    const valueA = (a[column] || "").toUpperCase();
-                    const valueB = (b[column] || "").toUpperCase();
-                    if (valueA < valueB) {
-                        return order === 'asc' ? -1 : 1;
-                    }
-                    if (valueA > valueB) {
-                        return order === 'asc' ? 1 : -1;
-                    }
-                    return 0;
-                });
-            };
-
-            const filterData = () => {
-                const recognitionType = recognitionTypeFilter.value;
-                const authorityName = authorityNameFilter.value;
-                let filteredData = data;
-
-                if (recognitionType) {
-                    filteredData = filteredData.filter(item => item['Recognition Type:'].includes(recognitionType));
-                }
-
-                if (authorityName) {
-                    filteredData = filteredData.filter(item => item['Authority Name'] === authorityName);
-                }
-
-                renderTable(filteredData);
-            };
-
-            populateFilters();
+            // Initial render
             renderTable(data);
 
-            document.querySelectorAll('#property-table th').forEach(header => {
-                header.addEventListener('click', () => {
-                    const column = header.getAttribute('data-column');
-                    const order = header.getAttribute('data-order');
-                    const newOrder = order === 'asc' ? 'desc' : 'asc';
-                    header.setAttribute('data-order', newOrder);
-                    sortData(column, newOrder);
-                    renderTable(data);
-                });
-            });
+            // Apply filters
+            applyFiltersButton.addEventListener('click', () => {
+                const selectedRecognition = recognitionFilter.value;
+                const selectedAuthority = authorityFilter.value;
 
-            filterButton.addEventListener('click', filterData);
+                const filteredData = data.filter(property => {
+                    const recognitionMatch = selectedRecognition === 'all' || property['Recognition Type:'].includes(selectedRecognition);
+                    const authorityMatch = selectedAuthority === 'all' || property['Authority Name'] === selectedAuthority;
+                    return recognitionMatch && authorityMatch;
+                });
+
+                renderTable(filteredData);
+            });
         })
-        .catch(error => console.error('Error loading JSON:', error));
+        .catch(error => console.error('Error loading property data:', error));
 });

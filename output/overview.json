@@ -3,7 +3,7 @@
         "Property Name": "Rouge River Bridge - Kingston Subdivision, Mile 316.10",
         "Street Name": "not applicable",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -18,7 +18,10 @@
         "Property Name": "Canadian Niagara Power Generating Station Complex ",
         "Street Name": "Niagara River",
         "Authority Name": "The Niagara Parks Commission (NPC)",
-        "Other Name(s):": "Canadian Niagara Power Generating Station Complex,William Birch Rankine Generating Station",
+        "Other Name(s):": [
+            "Canadian Niagara Power Generating Station Complex",
+            "William Birch Rankine Generating Station"
+        ],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -34,7 +37,7 @@
         "Property Name": "Toronto Power Generating Station Complex ",
         "Street Name": "Niagara River",
         "Authority Name": "The Niagara Parks Commission (NPC)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "National Historic Site",
@@ -51,7 +54,9 @@
         "Property Name": "Guelph Correctional Centre",
         "Street Name": "York ",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Guelph Reformatory",
+        "Other Name(s):": [
+            "Guelph Reformatory"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -66,7 +71,7 @@
         "Property Name": "Parry Sound Justice Complex",
         "Street Name": "James",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -81,7 +86,7 @@
         "Property Name": "Highland Creek Bridge ",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -96,7 +101,7 @@
         "Property Name": "Petticoat Creek Culvert",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -111,7 +116,9 @@
         "Property Name": "Dunbarton Subway",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Dunbarton Subway (Pickering - Lakeshore East Corridor)",
+        "Other Name(s):": [
+            "Dunbarton Subway (Pickering - Lakeshore East Corridor)"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -126,7 +133,9 @@
         "Property Name": "Markham Agricultural Preserve",
         "Street Name": "16th",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Rouge Park transfer lands",
+        "Other Name(s):": [
+            "Rouge Park transfer lands"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -141,7 +150,7 @@
         "Property Name": "Muskoka Regional Centre",
         "Street Name": "Highway",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -156,7 +165,7 @@
         "Property Name": "Kingston Psychiatric Hospital",
         "Street Name": "King",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -171,7 +180,13 @@
         "Property Name": "Penetanguishene Mental Health Centre",
         "Street Name": "Church",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Ontario Hospital,Ontario Reformatory for Boys,Penetanguishene Psychiatric Hospital,Reformatory Prison,Upper Canada Reformatory",
+        "Other Name(s):": [
+            "Ontario Hospital",
+            "Ontario Reformatory for Boys",
+            "Penetanguishene Psychiatric Hospital",
+            "Reformatory Prison",
+            "Upper Canada Reformatory"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -186,7 +201,10 @@
         "Property Name": "Palace Street School",
         "Street Name": "Front",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Canary Restaurant,Cherry Street Hotel",
+        "Other Name(s):": [
+            "Canary Restaurant",
+            "Cherry Street Hotel"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -201,7 +219,7 @@
         "Property Name": "Niagara Parks Queenston Escarpment Lands",
         "Street Name": "York",
         "Authority Name": "The Niagara Parks Commission (NPC)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -216,7 +234,9 @@
         "Property Name": "Attorney General Courthouse -Fort Francis",
         "Street Name": "Church",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Fort Frances Judicial Complex",
+        "Other Name(s):": [
+            "Fort Frances Judicial Complex"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -231,7 +251,7 @@
         "Property Name": "St. Clair Avenue West Bridge (Barrie Rail Corridor Mile 5.24)",
         "Street Name": "St. Clair",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -246,7 +266,9 @@
         "Property Name": "Justice Facility",
         "Street Name": "Drummond",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Lanark County (Perth) Courthouse",
+        "Other Name(s):": [
+            "Lanark County (Perth) Courthouse"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -261,7 +283,7 @@
         "Property Name": "Stone Culvert (Mile 20.86)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -276,7 +298,7 @@
         "Property Name": "Carlaw Avenue Subway (Mile 331.12 LSE)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -291,7 +313,7 @@
         "Property Name": "Gerrard Street East Subway (Mile 331.09 LSE)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -306,7 +328,7 @@
         "Property Name": "91 Franklin Street (BRC Mile 34.44)",
         "Street Name": "Franklin",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -321,7 +343,9 @@
         "Property Name": "Henley Bridge ( QEW over 12 Mile Creek)",
         "Street Name": "QEW",
         "Authority Name": "Ministry of Transportation (MTO)",
-        "Other Name(s):": "MTO Structure ID 18-104",
+        "Other Name(s):": [
+            "MTO Structure ID 18-104"
+        ],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Ontario Heritage Bridge List",
@@ -338,7 +362,9 @@
         "Property Name": "Chatham Kent Justice Facility",
         "Street Name": "Seventh",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Chatham Kent Supreme Courthouse",
+        "Other Name(s):": [
+            "Chatham Kent Supreme Courthouse"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -353,7 +379,7 @@
         "Property Name": "Queen's Park Complex",
         "Street Name": "Bay",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -368,7 +394,12 @@
         "Property Name": "Macdonald Block",
         "Street Name": "Bay",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "Hearst, Mowat, Hepburn, Ferguson Blocks ",
+        "Other Name(s):": [
+            "Hearst",
+            " Mowat",
+            " Hepburn",
+            " Ferguson Blocks "
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -383,7 +414,7 @@
         "Property Name": "Islington Avenue Bridge (Mile 7.46 LSW)",
         "Street Name": "Islington",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -398,7 +429,7 @@
         "Property Name": "Maple GO Station",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -413,7 +444,7 @@
         "Property Name": "Markham GO Station",
         "Street Name": "Main ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -428,7 +459,7 @@
         "Property Name": "Bronte Creek Bridge (Mile 25.87 LSW)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -443,7 +474,7 @@
         "Property Name": "Union Station",
         "Street Name": "Front",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Canadian Register of Historic Places",
             "National Historic Site",
@@ -463,7 +494,7 @@
         "Property Name": "Sixteen Mile Creek Bridge (Mile 21.71 LSW)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -479,7 +510,7 @@
         "Property Name": "Cherry Street USRC Bridge (Subway)",
         "Street Name": "Cherry",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -494,7 +525,7 @@
         "Property Name": "Lower Jarvis Street USRC Bridge (Subway)",
         "Street Name": "cherry",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -509,7 +540,7 @@
         "Property Name": "Lower Sherbourne Street USRC Bridge (Subway)",
         "Street Name": "Lower Sherbourne",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -524,7 +555,7 @@
         "Property Name": "Parliament Street USRC Bridge (Subway)",
         "Street Name": "Parliament ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -539,7 +570,9 @@
         "Property Name": "Leslie Frost Centre Complex",
         "Street Name": "Dorset",
         "Authority Name": "Ontario Infrastructure and Lands Corporation (IO)",
-        "Other Name(s):": "Leslie M. Frost Centre",
+        "Other Name(s):": [
+            "Leslie M. Frost Centre"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -554,7 +587,9 @@
         "Property Name": "Ontario Fire College",
         "Street Name": "Muskoka",
         "Authority Name": "Ontario Infrastructure and Lands Corporation (IO)",
-        "Other Name(s):": "Muskoka Free Sanitarium for Consumptives",
+        "Other Name(s):": [
+            "Muskoka Free Sanitarium for Consumptives"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -569,7 +604,12 @@
         "Property Name": "N02556 Justice Facility (Perth/Lanark County Courthouse)",
         "Street Name": "Drummond",
         "Authority Name": "Ontario Infrastructure and Lands Corporation (IO)",
-        "Other Name(s):": "Lanark County Court House,Lanark County Justice Facility,Perth Courthouse,Perth Jail",
+        "Other Name(s):": [
+            "Lanark County Court House",
+            "Lanark County Justice Facility",
+            "Perth Courthouse",
+            "Perth Jail"
+        ],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Provincial Heritage Property",
@@ -586,7 +626,9 @@
         "Property Name": "Barnum House (Museum)",
         "Street Name": "Highway 2",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Poplar House",
+        "Other Name(s):": [
+            "Poplar House"
+        ],
         "Recognition Type:": [
             "National Historic Site",
             "Ontario Heritage Trust Property",
@@ -605,7 +647,10 @@
         "Property Name": "Sir James Whitney School",
         "Street Name": "Dundas",
         "Authority Name": "Ontario Infrastructure and Lands Corporation (IO)",
-        "Other Name(s):": "Ontario School for the Deaf,Sir James Whitney School for the Deaf ",
+        "Other Name(s):": [
+            "Ontario School for the Deaf",
+            "Sir James Whitney School for the Deaf "
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -620,7 +665,9 @@
         "Property Name": "Bethune Thompson House",
         "Street Name": "John",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "White House",
+        "Other Name(s):": [
+            "White House"
+        ],
         "Recognition Type:": [
             "National Historic Site",
             "Ontario Heritage Trust Property",
@@ -638,7 +685,7 @@
         "Property Name": "Yonge Street Railway Bridge, Toronto (USRC)",
         "Street Name": "Yonge",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -653,7 +700,7 @@
         "Property Name": "Duff-Baby House",
         "Street Name": "Mill",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Ontario Heritage Trust Property",
@@ -671,7 +718,9 @@
         "Property Name": "Elgin and Wintergarden Theatre Centre",
         "Street Name": "Yonge",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Loew's and Winter Garden Yonge Street Theatres",
+        "Other Name(s):": [
+            "Loew's and Winter Garden Yonge Street Theatres"
+        ],
         "Recognition Type:": [
             "National Historic Site",
             "OHA Designation Part IV",
@@ -691,7 +740,7 @@
         "Property Name": "Enoch Turner Schoolhouse",
         "Street Name": "Trinity",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Ontario Heritage Trust Property",
@@ -709,7 +758,9 @@
         "Property Name": "George Brown House",
         "Street Name": "Beverly ",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Lambton Lodge",
+        "Other Name(s):": [
+            "Lambton Lodge"
+        ],
         "Recognition Type:": [
             "National Historic Site",
             "OHA Designation Part IV",
@@ -729,7 +780,11 @@
         "Property Name": "Hudson Bay Company (HBC) Staff House",
         "Street Name": "Front",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "HBC Clerk's Quarters,HBC Officer's Dwelling,HBV Men's House",
+        "Other Name(s):": [
+            "HBC Clerk's Quarters",
+            "HBC Officer's Dwelling",
+            "HBV Men's House"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property"
@@ -745,7 +800,7 @@
         "Property Name": "Stone Arch Culvert (Mile 35.88 Kitchener Rail Corridor)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -760,7 +815,7 @@
         "Property Name": "Hudson Bay Company (HBC) McLeod House",
         "Street Name": "Museum",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property"
@@ -776,7 +831,7 @@
         "Property Name": "Stone Box Culvert (Mile 36.13 Kitchener Rail Corridor)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -791,7 +846,7 @@
         "Property Name": "Hudson Bay Company (HBC) Sackabuckiskum  House",
         "Street Name": "Museum",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property"
@@ -807,7 +862,9 @@
         "Property Name": "Sir Adam Beck I Generating Station",
         "Street Name": "Niagara ",
         "Authority Name": "Ontario Power Generation (OPG)",
-        "Other Name(s):": "Queenston-Chippawa Hydro-Electric Development",
+        "Other Name(s):": [
+            "Queenston-Chippawa Hydro-Electric Development"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -822,7 +879,9 @@
         "Property Name": "Hudson Bay Company (HBC) Turner  House",
         "Street Name": "Museum",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Annie Corston Cottage",
+        "Other Name(s):": [
+            "Annie Corston Cottage"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property"
@@ -838,7 +897,9 @@
         "Property Name": "Inge-Va",
         "Street Name": "Craig ",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Radenhurst Place",
+        "Other Name(s):": [
+            "Radenhurst Place"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property",
@@ -855,7 +916,7 @@
         "Property Name": "Homewood",
         "Street Name": "County Road 2",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "National Historic Site",
             "Ontario Heritage Trust Property",
@@ -874,7 +935,9 @@
         "Property Name": "Jesse Ashbridge House",
         "Street Name": "Queen ",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Ashbridge Estate",
+        "Other Name(s):": [
+            "Ashbridge Estate"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property",
@@ -891,7 +954,7 @@
         "Property Name": "Stone Arch Culvert (Mile 54.61 Kitchener Corridor)",
         "Street Name": "Woolwich-Guelph Townline",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -906,7 +969,11 @@
         "Property Name": "Macdonell Williamson House ",
         "Street Name": "Des Outaouais",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Chemin des outaouais,Poplar Villa,Scotus",
+        "Other Name(s):": [
+            "Chemin des outaouais",
+            "Poplar Villa",
+            "Scotus"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property"
@@ -922,7 +989,9 @@
         "Property Name": "Speed River Bridge at Mile 48.50 (Kitchener Rail Corridor) ",
         "Street Name": "Macdonnell ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Macdonnell Street - Rail Viaduct",
+        "Other Name(s):": [
+            "Macdonnell Street - Rail Viaduct"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -937,7 +1006,7 @@
         "Property Name": "Mather-Walls House",
         "Street Name": "Gore ",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "National Historic Site",
             "Ontario Heritage Trust Property",
@@ -956,7 +1025,10 @@
         "Property Name": "McMartin House",
         "Street Name": "Gore",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Haughty Mac's,St. John's Hall",
+        "Other Name(s):": [
+            "Haughty Mac's",
+            "St. John's Hall"
+        ],
         "Recognition Type:": [
             "National Historic Site",
             "Ontario Heritage Trust Property",
@@ -975,7 +1047,7 @@
         "Property Name": "St. Clair Ave West Subway (Kitchener Corridor) Toronto",
         "Street Name": "St. Clair ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -990,7 +1062,7 @@
         "Property Name": "Scarboro Golf and Country Club (Lakeshore East Corridor) ",
         "Street Name": "Scarborough Golf Club ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1005,7 +1077,7 @@
         "Property Name": "99 Sudbury Street (Kitchener Corridor) ",
         "Street Name": "Sudbury ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1020,7 +1092,7 @@
         "Property Name": "55 Sudbury Street (Kitchener Corridor) ",
         "Street Name": "Sudbury",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1035,7 +1107,7 @@
         "Property Name": "Niagara Apothecary",
         "Street Name": "Queen",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "National Historic Site",
             "Ontario Heritage Trust Property",
@@ -1054,7 +1126,9 @@
         "Property Name": "Ontario Heritage Centre",
         "Street Name": "Adelaide",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Birkbeck Building",
+        "Other Name(s):": [
+            "Birkbeck Building"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property",
@@ -1071,7 +1145,7 @@
         "Property Name": "Rockwood Academy",
         "Street Name": "Main ",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Ontario Heritage Trust Easement",
@@ -1090,7 +1164,7 @@
         "Property Name": "902 King Street East, Hamilton ",
         "Street Name": "King ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -1106,7 +1180,9 @@
         "Property Name": "612 King Street West, Hamilton",
         "Street Name": "King ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Blue Cross Animal Hospital",
+        "Other Name(s):": [
+            "Blue Cross Animal Hospital"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1121,7 +1197,9 @@
         "Property Name": "Sir Harry Oakes' Chateau",
         "Street Name": "Chateau",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Kirkland Lake Museum of Northern History",
+        "Other Name(s):": [
+            "Kirkland Lake Museum of Northern History"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property",
@@ -1138,7 +1216,7 @@
         "Property Name": "Uncle Tom's Cabin - Harris House",
         "Street Name": "Uncle Tom's ",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property",
@@ -1155,7 +1233,7 @@
         "Property Name": "Uncle Tom’s Cabin – Henson House",
         "Street Name": "Uncle Tom's",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property",
@@ -1172,7 +1250,9 @@
         "Property Name": "Uncle Tom's Cabin - Pioneer Church",
         "Street Name": "Uncle Tom's ",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "Uncle Tom's Chapel",
+        "Other Name(s):": [
+            "Uncle Tom's Chapel"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Trust Property",
             "Provincial Heritage Property",
@@ -1189,7 +1269,7 @@
         "Property Name": "Etobicoke Creek Bridge (Mile 9.82 Lakeshore West Corridor)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1204,7 +1284,7 @@
         "Property Name": "W. Ross Macdonald School",
         "Street Name": "Brant",
         "Authority Name": "Ministry of Government and Consumer Services (MGCS)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1219,7 +1299,11 @@
         "Property Name": "Ontario Tree Seed Plant",
         "Street Name": "King",
         "Authority Name": "Ontario Infrastructure and Lands Corporation (IO)",
-        "Other Name(s):": "141 King Street,Angus Tree Seed Plant,OTSP",
+        "Other Name(s):": [
+            "141 King Street",
+            "Angus Tree Seed Plant",
+            "OTSP"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1234,7 +1318,7 @@
         "Property Name": "Leaside Transformer Station",
         "Street Name": "Millwood",
         "Authority Name": "Hydro One Inc.",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1249,7 +1333,9 @@
         "Property Name": "Kitchener GO Station (Mile 63.65 Kitchener Corridor)",
         "Street Name": "Weber",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Kitchener Canadian National Railway Station",
+        "Other Name(s):": [
+            "Kitchener Canadian National Railway Station"
+        ],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property",
@@ -1266,7 +1352,9 @@
         "Property Name": "Guelph Central Station (Mile 48.80 Kitchener Corridor)",
         "Street Name": "Carden",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Guelph Canadian National Railways (VIA Rail/GO Transit) Station",
+        "Other Name(s):": [
+            "Guelph Canadian National Railways (VIA Rail/GO Transit) Station"
+        ],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Provincial Heritage Property",
@@ -1283,7 +1371,9 @@
         "Property Name": "Bathurst Street Bridge (USRC)",
         "Street Name": "Bathurst ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Sir Isaac Brock Bridge",
+        "Other Name(s):": [
+            "Sir Isaac Brock Bridge"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1298,7 +1388,7 @@
         "Property Name": "Humber River Bridge (Kitchener Corridor)",
         "Street Name": "Not Applicable",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1313,7 +1403,9 @@
         "Property Name": "Credit River Bridge (Mile 13.27 LSW)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Former CN Rail Bridge over Credit River",
+        "Other Name(s):": [
+            "Former CN Rail Bridge over Credit River"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1328,7 +1420,9 @@
         "Property Name": "Little Current Swing Bridge",
         "Street Name": "Highway 6",
         "Authority Name": "Ministry of Transportation (MTO)",
-        "Other Name(s):": "MTO Site Number 49-02",
+        "Other Name(s):": [
+            "MTO Site Number 49-02"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Bridge List",
             "Provincial Heritage Property"
@@ -1344,7 +1438,7 @@
         "Property Name": "Don River Bridge (Mile 12.9 Richmond Hill Corridor)",
         "Street Name": "Sheppard ",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1359,7 +1453,7 @@
         "Property Name": "East Don River Bridge (Mile 14.8 Richmond Hill Corridor) ",
         "Street Name": "Mintwood",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1374,7 +1468,7 @@
         "Property Name": "Mississauga Road Bridge (Mile 13.39 Lakeshore West Corridor)",
         "Street Name": "Mississauga",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1389,7 +1483,9 @@
         "Property Name": "Queen Street East Bridge (City of Toronto Structure 245)",
         "Street Name": "Queen",
         "Authority Name": "",
-        "Other Name(s):": "Queen Street East Bridge over Don River",
+        "Other Name(s):": [
+            "Queen Street East Bridge over Don River"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1404,7 +1500,9 @@
         "Property Name": "Dundas Street East Bridge (City of Toronto Structure 042) ",
         "Street Name": "Dundas ",
         "Authority Name": "",
-        "Other Name(s):": "Dundas Street East Bridge over the Don River",
+        "Other Name(s):": [
+            "Dundas Street East Bridge over the Don River"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1419,7 +1517,7 @@
         "Property Name": "Gerrard Street East Bridge (City of Toronto Structure 042) ",
         "Street Name": "Gerrard",
         "Authority Name": "",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1434,7 +1532,9 @@
         "Property Name": "90 Morningside Avenue, Scarborough",
         "Street Name": "Moringside",
         "Authority Name": "",
-        "Other Name(s):": "Purvis-Castle log cabin",
+        "Other Name(s):": [
+            "Purvis-Castle log cabin"
+        ],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Provincial Heritage Property"
@@ -1450,7 +1550,10 @@
         "Property Name": "Don River Bridge (Mile 8.60 Richmond Hill Corridor)",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Don River Bridge (Mile 8.60 Bala Subdivision, Richmond Hill Corridor)",
+        "Other Name(s):": [
+            "Don River Bridge (Mile 8.60 Bala Subdivision",
+            " Richmond Hill Corridor)"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1465,7 +1568,7 @@
         "Property Name": "Don River Bridge (Mile 208.6 CPRailway-Belleville Subdivision))",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1480,7 +1583,9 @@
         "Property Name": "Rideau River (Hurdmans) Bridge",
         "Street Name": "",
         "Authority Name": "Ministry of Transportation (MTO)",
-        "Other Name(s):": "3-73",
+        "Other Name(s):": [
+            "3-73"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Bridge List",
             "Provincial Heritage Property"
@@ -1496,7 +1601,9 @@
         "Property Name": "Wildwood Dam Bridge ",
         "Street Name": "",
         "Authority Name": "Ministry of Transportation (MTO)",
-        "Other Name(s):": "25-268",
+        "Other Name(s):": [
+            "25-268"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Bridge List",
             "Provincial Heritage Property"
@@ -1512,7 +1619,16 @@
         "Property Name": "Queen Victoria Park",
         "Street Name": "Niagara River",
         "Authority Name": "The Niagara Parks Commission (NPC)",
-        "Other Name(s):": "Canadian Niagara Power Generating Station,Dufferin Islands,Oak Hall,Oakes Garden Theatre and Rainbow Gardens,Ontario Power Generating Station,Queen Victoria Park Cultural Heritage Landscape,Queen Victoria Place,Toronto Power Generating Station",
+        "Other Name(s):": [
+            "Canadian Niagara Power Generating Station",
+            "Dufferin Islands",
+            "Oak Hall",
+            "Oakes Garden Theatre and Rainbow Gardens",
+            "Ontario Power Generating Station",
+            "Queen Victoria Park Cultural Heritage Landscape",
+            "Queen Victoria Place",
+            "Toronto Power Generating Station"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1527,7 +1643,7 @@
         "Property Name": "30 Nelson Street West",
         "Street Name": "Nelosn",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -1543,7 +1659,7 @@
         "Property Name": "5 Railroad Street",
         "Street Name": "Railroad",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -1559,7 +1675,7 @@
         "Property Name": "50 Elizabeth Street North",
         "Street Name": "Elizabeth",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -1575,7 +1691,7 @@
         "Property Name": "46 Elizabeth Street North",
         "Street Name": "Elizabeth",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -1591,7 +1707,7 @@
         "Property Name": "Coniston Generating Station (GS)",
         "Street Name": "xx",
         "Authority Name": "Ontario Power Generation (OPG)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1606,7 +1722,7 @@
         "Property Name": "Norris Whitney Bridge",
         "Street Name": "62",
         "Authority Name": "Ministry of Transportation (MTO)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1621,7 +1737,7 @@
         "Property Name": "Bethune Thompson House Workers' Cottage",
         "Street Name": "John",
         "Authority Name": "Ontario Heritage Trust (OHT)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "National Historic Site",
             "Ontario Heritage Trust Property",
@@ -1639,7 +1755,7 @@
         "Property Name": "Niagara Parks Marina at Miller’s Creek",
         "Street Name": "Niagara River ",
         "Authority Name": "The Niagara Parks Commission (NPC)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1654,7 +1770,9 @@
         "Property Name": "QEW Overpass at Garden City Skyway",
         "Street Name": "QEW from approximately 80 m west of Bunting Road to  approximately 300 m east of Niagara Stone Road (approximately 2.2. km in length)",
         "Authority Name": "Ministry of Transportation (MTO)",
-        "Other Name(s):": "Site No. 18-111",
+        "Other Name(s):": [
+            "Site No. 18-111"
+        ],
         "Recognition Type:": [
             "Ontario Heritage Bridge List",
             "Provincial Heritage Property"
@@ -1670,7 +1788,7 @@
         "Property Name": " Mary Reid House",
         "Street Name": "Eglinton",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1685,7 +1803,7 @@
         "Property Name": "1 Grant Avenue (652-654 King Street East)",
         "Street Name": "Grant",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Evaluated",
             " but not a Heritage Property"
@@ -1701,7 +1819,7 @@
         "Property Name": "656 King Street East (Hamilton)",
         "Street Name": "King",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1716,7 +1834,7 @@
         "Property Name": "902 King Street East (Hamilton)",
         "Street Name": "King",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1731,7 +1849,7 @@
         "Property Name": "Flett Pohlman Farm",
         "Street Name": "Concession 8",
         "Authority Name": "Hydro One Inc.",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1746,7 +1864,7 @@
         "Property Name": "Uxbridge Trans Canada Trail Bridge",
         "Street Name": "",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1761,7 +1879,7 @@
         "Property Name": "West Don River Culvert",
         "Street Name": "Langstaff",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1776,7 +1894,7 @@
         "Property Name": "Bradford GO Station",
         "Street Name": "holland",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1791,7 +1909,7 @@
         "Property Name": "Aurora GO Station",
         "Street Name": "Wellington",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "OHA Designation Part V",
@@ -1810,7 +1928,7 @@
         "Property Name": "Kodak Building No. 9",
         "Street Name": "Eglinton",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Provincial Heritage Property"
@@ -1826,7 +1944,7 @@
         "Property Name": "Former Fire Station #135",
         "Street Name": "Eglinton",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1841,7 +1959,9 @@
         "Property Name": "1151 Weston Road (Scotiabank)",
         "Street Name": "Weston",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Mount Dennis Bank of Nova Scotia",
+        "Other Name(s):": [
+            "Mount Dennis Bank of Nova Scotia"
+        ],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property"
@@ -1857,7 +1977,7 @@
         "Property Name": "Photography Drive Bridge and Retaining Wall",
         "Street Name": "Eglinton",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1872,7 +1992,9 @@
         "Property Name": "Union Station Rail Corridor (USRC) Interlocking Tower - Cherry Street",
         "Street Name": "Cherry",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Cherry Street Interlocking Tower",
+        "Other Name(s):": [
+            "Cherry Street Interlocking Tower"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1887,7 +2009,7 @@
         "Property Name": "Dunn Avenue Bridge",
         "Street Name": "Dunn",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1902,7 +2024,7 @@
         "Property Name": "Dowling Avenue Bridge",
         "Street Name": "Dowling",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1917,7 +2039,7 @@
         "Property Name": "256-258 Eglinton Avenue East",
         "Street Name": "Eglinton",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1932,7 +2054,7 @@
         "Property Name": "Eglinton West Subway Station",
         "Street Name": "Eglinton",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1947,7 +2069,7 @@
         "Property Name": "2190-2200 Yonge Street ",
         "Street Name": "Yonge",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1962,7 +2084,7 @@
         "Property Name": "Guelph Drill Hall",
         "Street Name": "Farquhar",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1977,7 +2099,7 @@
         "Property Name": "Union Station Rail Corridor (USRC) Interlocking Tower - John Street",
         "Street Name": "John",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -1992,7 +2114,9 @@
         "Property Name": "Union Station Rail Corridor (USRC)  Interlocking Tower - Scott Street",
         "Street Name": "Scott",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Scott Street Interlocking Tower",
+        "Other Name(s):": [
+            "Scott Street Interlocking Tower"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -2007,7 +2131,7 @@
         "Property Name": "Brampton GO Transit/VIA Rail Station",
         "Street Name": "Church",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Municipal Heritage Register",
             "Provincial Heritage Property",
@@ -2024,7 +2148,7 @@
         "Property Name": "Georgetown GO Transit/VIA Rail Station",
         "Street Name": "Queen",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property",
             "Railway Stations Protection Act Designation"
@@ -2040,7 +2164,10 @@
         "Property Name": "Hamilton Centre GO Station",
         "Street Name": "Hunter",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "Toronto, Hamilton & Buffalo Station",
+        "Other Name(s):": [
+            "Toronto",
+            " Hamilton & Buffalo Station"
+        ],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Provincial Heritage Property",
@@ -2057,7 +2184,9 @@
         "Property Name": "Ontario Power Generating Station",
         "Street Name": "Niagara River",
         "Authority Name": "The Niagara Parks Commission (NPC)",
-        "Other Name(s):": "Ontario Power Generating Station Complex",
+        "Other Name(s):": [
+            "Ontario Power Generating Station Complex"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -2072,7 +2201,7 @@
         "Property Name": "Thompson's Point",
         "Street Name": "Niagara River",
         "Authority Name": "The Niagara Parks Commission (NPC)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -2087,7 +2216,7 @@
         "Property Name": "London Psychiatric Hospital",
         "Street Name": "Highbury",
         "Authority Name": "Ministry of Infrastructure (MOI)",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "OHA Designation Part IV",
             "Ontario Heritage Trust Easement",
@@ -2105,7 +2234,7 @@
         "Property Name": "York Beltline Trail",
         "Street Name": "Bowie",
         "Authority Name": "Metrolinx",
-        "Other Name(s):": "",
+        "Other Name(s):": [],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],
@@ -2120,7 +2249,11 @@
         "Property Name": "Wesleyville Village ",
         "Street Name": "Lakeshore",
         "Authority Name": "Ontario Power Generation (OPG)",
-        "Other Name(s):": "Barrowclough House and Barn,Oughtred House and Barn,Wesleyville Schoolhouse",
+        "Other Name(s):": [
+            "Barrowclough House and Barn",
+            "Oughtred House and Barn",
+            "Wesleyville Schoolhouse"
+        ],
         "Recognition Type:": [
             "Provincial Heritage Property"
         ],

@@ -47,8 +47,9 @@ def extract_data_from_excel(excel_file_path, output_json_path):
     # Replace NaN values with empty strings
     df.fillna('', inplace=True)
 
-    # Split 'Recognition Type:' column on commas
+    # Split 'Recognition Type:' and 'Other Name(s):' columns on commas
     df['Recognition Type:'] = df['Recognition Type:'].apply(lambda x: x.split(',') if x else [])
+    df['Other Name(s):'] = df['Other Name(s):'].apply(lambda x: x.split(',') if x else [])
 
     # Convert to list of dictionaries
     data = df.to_dict(orient='records')
