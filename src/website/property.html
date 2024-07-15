@@ -22,24 +22,34 @@
                     const property = data[propertyIndex];
                     if (property) {
                         const detailsTable = document.getElementById('property-details');
-                        detailsTable.innerHTML = `
-                            <tr><th>Property Name</th><td>${property['Property Name']}</td></tr>
-                            <tr><th>Street Name</th><td>${property['Street Name']}</td></tr>
-                            <tr><th>Authority Name</th><td>${property['Authority Name']}</td></tr>
-                            <tr><th>Other Name(s)</th><td>${property['Other Name(s):'].join('<br>')}</td></tr>
-                            <tr><th>Recognition Type</th><td>${property['Recognition Type:'].join('<br>')}</td></tr>
-                            <tr><th>Address</th><td>${property['Address:']}</td></tr>
-                            <tr><th>Description of Property</th><td>${property['Description of Property:']}</td></tr>
-                            <tr><th>Statement of Cultural Heritage Value or Interest</th><td>${property['Statement of Cultural Heritage Value or Interest:']}</td></tr>
-                            <tr><th>Description of Heritage Attributes</th><td>${property['Description of Heritage Attributes:']}</td></tr>
-                            <tr><th>Current Functional Category</th><td>${property['Current Functional Category:']}</td></tr>
-                            <tr><th>Current Functional Type</th><td>${property['Current Functional Type:']}</td></tr>
-                        `;
+                        const createRow = (label, value) => {
+                            const tr = document.createElement('tr');
+                            const th = document.createElement('th');
+                            const td = document.createElement('td');
+                            th.innerText = label;
+                            td.innerHTML = value.replace(/\n/g, '<br>');
+                            tr.appendChild(th);
+                            tr.appendChild(td);
+                            return tr;
+                        };
+
+                        detailsTable.appendChild(createRow('Property Name', property['Property Name']));
+                        detailsTable.appendChild(createRow('Street Name', property['Street Name']));
+                        detailsTable.appendChild(createRow('Authority Name', property['Authority Name']));
+                        detailsTable.appendChild(createRow('Other Name(s)', property['Other Name(s):'].join('<br>')));
+                        detailsTable.appendChild(createRow('Recognition Type', property['Recognition Type:'].join('<br>')));
+                        detailsTable.appendChild(createRow('Address', property['Address:']));
+                        detailsTable.appendChild(createRow('Description of Property', property['Description of Property:']));
+                        detailsTable.appendChild(createRow('Statement of Cultural Heritage Value or Interest', property['Statement of Cultural Heritage Value or Interest:']));
+
+                        detailsTable.appendChild(createRow('Description of Heritage Attributes', property['Description of Heritage Attributes:']));
+                        detailsTable.appendChild(createRow('Current Functional Category', property['Current Functional Category:']));
+                        detailsTable.appendChild(createRow('Current Functional Type', property['Current Functional Type:']));
                     } else {
                         document.getElementById('property-details').innerText = 'Property not found.';
                     }
                 })
-                .catch(error => console.error('Error loading property details:', error));
+                .catch(error => console.error('Error loading property details:', error))
         });
     </script>
 </body>
