@@ -9,7 +9,7 @@ def download_xlsx():
     output_folder = os.path.join(os.path.dirname(__file__), '..', '..', 'output')  # Adjust the path to the output folder
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # Set to True for headless mode
+        browser = p.chromium.launch(headless=True)  # Set to True for headless mode
         context = browser.new_context()
 
         page = context.new_page()

@@ -12,6 +12,7 @@ beautifulsoup4 = "*"
 lxml = "*"
 pandas = "*"
 xlrd = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.12"
