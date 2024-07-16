@@ -15,6 +15,7 @@ jobs:
     - name: Generate overview.json
       run: |
         cd src/scrape
+        echo "Python version: $(python --version)"
         pip install pipenv
         pipenv install
         pipenv run python main.py
