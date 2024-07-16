@@ -11,6 +11,11 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v4
+    
+    - name: Set up Python from Pipfile
+      id: python
+      run: |
+        echo "::set-output name=version::$(grep python_version scr/scrape/Pipfile | cut -d'"' -f2)"
       
     - name: Generate overview.json
       run: |
