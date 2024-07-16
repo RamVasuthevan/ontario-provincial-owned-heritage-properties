@@ -1,0 +1,46 @@
+name: Update WHOIS servers list
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v4
+      
+    - name: Generate overview.json
+      run: |
+        cd scr/scrape
+        pipenv install
+        pipenv run python main.py
+
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    
+    - name: Check for changes in overview
+      id: check_changes
+      run: |
+          git diff --exit-code overview.json && (echo "No changes detected in CSV" && echo "changes=no" >> $GITHUB_ENV) || (echo "Changes detected in overview.json" && echo "changes=yes" >> $GITHUB_ENV)
+      
+    - name: Create Pull Request
+      if: env.changes == 'yes'
+      id: cpr
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Automatically updated on ${{ steps.date.outputs.date }}"
+        title: "Update overview.json - ${{ steps.date.outputs.date }}"
+        branch: "update-${{ steps.date.outputs.date }}-${{ github.run_number }}"
+        labels: automated-pr
+
+    - name: PR details
+      if: env.changes == 'yes'
+      run: |
+        echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+        echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
