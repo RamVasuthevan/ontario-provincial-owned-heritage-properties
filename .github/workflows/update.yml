@@ -15,8 +15,14 @@ jobs:
     - name: Set up Python from Pipfile
       id: python
       run: |
-        echo "::set-output name=version::$(grep python_version scr/scrape/Pipfile | cut -d'"' -f2)"
+        version=$(grep "python_version" src/scrape/Pipfile | cut -d'"' -f2)
+        echo "::set-output name=version::${version}"
       
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ steps.python.outputs.version }}
+    
     - name: Generate overview.json
       run: |
         cd src/scrape
@@ -32,7 +38,7 @@ jobs:
     - name: Check for changes in overview
       id: check_changes
       run: |
-          git diff --exit-code overview.json && (echo "No changes detected in CSV" && echo "changes=no" >> $GITHUB_ENV) || (echo "Changes detected in overview.json" && echo "changes=yes" >> $GITHUB_ENV)
+          git diff --exit-code ../../output/overview.json && (echo "No changes detected in overview.json" && echo "changes=no" >> $GITHUB_ENV) || (echo "Changes detected in overview.json" && echo "changes=yes" >> $GITHUB_ENV)
       
     - name: Create Pull Request
       if: env.changes == 'yes'
