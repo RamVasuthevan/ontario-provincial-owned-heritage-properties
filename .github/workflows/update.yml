@@ -29,6 +29,7 @@ jobs:
         echo "Python version: $(python --version)"
         pip install pipenv
         pipenv install
+        pipenv run playwright_setup
         pipenv run python main.py
 
     - name: Get current date
