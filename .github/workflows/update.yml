@@ -2,7 +2,7 @@ name: Update overview.json
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   update:
@@ -44,7 +44,7 @@ jobs:
     - name: Check for changes in overview
       id: check_changes
       run: |
-          git diff --exit-code ../../output/overview.json && (echo "No changes detected in overview.json" && echo "changes=no" >> $GITHUB_ENV) || (echo "Changes detected in overview.json" && echo "changes=yes" >> $GITHUB_ENV)
+          git diff --exit-code ../../output/overview.json && echo "No changes detected in overview.json" || (echo "Changes detected in overview.json" && echo "changes=yes" >> $GITHUB_ENV)
       
     - name: Create Pull Request
       if: env.changes == 'yes'
