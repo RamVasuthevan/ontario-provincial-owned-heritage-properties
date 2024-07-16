@@ -30,7 +30,7 @@ jobs:
         pip install pipenv
         pipenv install
         npm install
-        npx playwright install
+        npx playwright install --with-deps
 
     - name: Generate overview.json
       run: |
