@@ -19,8 +19,9 @@ def download_xlsx():
         with page.expect_download() as download_info:
             page.click(download_selector)
         download = download_info.value
-        default_filename = download.suggested_filename
-        download_path = os.path.join(output_folder, default_filename)
+        #file_name = download.suggested_filename
+        file_name = "APS_Heritage_Properties_Information.xlsx"
+        download_path = os.path.join(output_folder, file_name)
         download.save_as(download_path)
         
         print(f"File downloaded and saved as {download_path}")
