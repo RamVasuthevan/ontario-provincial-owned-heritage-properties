@@ -14,7 +14,7 @@ jobs:
       
     - name: Generate overview.json
       run: |
-        cd scr/scrape
+        cd src/scrape
         pipenv install
         pipenv run python main.py
 
