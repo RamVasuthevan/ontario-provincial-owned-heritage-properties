@@ -1,5 +1,4 @@
-name: Update WHOIS servers list
-
+name: Update overview.json
 on:
   workflow_dispatch:
   schedule:
