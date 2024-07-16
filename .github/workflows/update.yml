@@ -23,13 +23,18 @@ jobs:
       with:
         python-version: ${{ steps.python.outputs.version }}
     
-    - name: Generate overview.json
+    - name: Install dependencies
       run: |
         cd src/scrape
         echo "Python version: $(python --version)"
         pip install pipenv
         pipenv install
-        pipenv run playwright_setup
+        npm install
+        playwright install
+
+    - name: Generate overview.json
+      run: |
+        cd src/scrape
         pipenv run python main.py
 
     - name: Get current date

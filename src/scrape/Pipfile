@@ -16,6 +16,3 @@ numpy = "*"
 
 [requires]
 python_version = "3.12"
-
-[scripts]
-playwright_setup = "npm install && playwright install"
