@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Property Details</h1>
+    <table id="property-details">
+        <!-- Property details will be populated here -->
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const propertyIndex = urlParams.get('property');
+
+            fetch('data/overview.json')
+                .then(response => response.json())
+                .then(data => {
+                    const property = data[propertyIndex];
+                    if (property) {
+                        const detailsTable = document.getElementById('property-details');
+                        const createRow = (label, value) => {
+                            const tr = document.createElement('tr');
+                            const th = document.createElement('th');
+                            const td = document.createElement('td');
+                            th.innerText = label;
+                            td.innerHTML = value.replace(/\n/g, '<br>');
+                            tr.appendChild(th);
+                            tr.appendChild(td);
+                            return tr;
+                        };
+
+                        detailsTable.appendChild(createRow('Property Name', property['Property Name']));
+                        detailsTable.appendChild(createRow('Street Name', property['Street Name']));
+                        detailsTable.appendChild(createRow('Authority Name', property['Authority Name']));
+                        detailsTable.appendChild(createRow('Other Name(s)', property['Other Name(s):'].join('<br>')));
+                        detailsTable.appendChild(createRow('Recognition Type', property['Recognition Type:'].join('<br>')));
+                        detailsTable.appendChild(createRow('Address', property['Address:']));
+                        detailsTable.appendChild(createRow('Description of Property', property['Description of Property:']));
+                        detailsTable.appendChild(createRow('Statement of Cultural Heritage Value or Interest', property['Statement of Cultural Heritage Value or Interest:']));
+
+                        detailsTable.appendChild(createRow('Description of Heritage Attributes', property['Description of Heritage Attributes:']));
+                        detailsTable.appendChild(createRow('Current Functional Category', property['Current Functional Category:']));
+                        detailsTable.appendChild(createRow('Current Functional Type', property['Current Functional Type:']));
+                    } else {
+                        document.getElementById('property-details').innerText = 'Property not found.';
+                    }
+                })
+                .catch(error => console.error('Error loading property details:', error))
+        });
+    </script>
+</body>
+</html>

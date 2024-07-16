@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    margin-right: 20px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+}
+
+th[data-order="asc"]::after {
+    content: ' \u25B2';
+}
+
+th[data-order="desc"]::after {
+    content: ' \u25BC';
+}
+
+td {
+    vertical-align: top;
+}
+
+#property-details th {
+    width: 30%;
+    background-color: #f2f2f2;
+}
+
+#property-details td {
+    width: 70%;
+}
