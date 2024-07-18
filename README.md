@@ -1,3 +1,3 @@
 # Ontario Provincial Owned Heritage Properties
 
-A [list](https://www.pastport.mtc.gov.on.ca/OHPWeb/ohp/ohpSearch.xhtml) of heritage properties owned by prescribed public bodies under [Ontario Regulation 157/10](https://www.ontario.ca/laws/regulation/r10157) in accordance with [Ontario Heritage Act, Part III.1 Standards and Guidelines for Conservation of Provincial Heritage Properties](https://www.ontario.ca/laws/statute/90o18#BK28)
+A [list](https://www.pastport.mtc.gov.on.ca/OHPWeb/ohp/ohpSearch.xhtml) of heritage properties owned by prescribed public bodies under [Ontario Regulation 157/10](https://www.ontario.ca/laws/regulation/r10157) in accordance with [Ontario Heritage Act](https://www.ontario.ca/laws/statute/90o18#BK28)
