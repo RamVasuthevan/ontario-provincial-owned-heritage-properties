@@ -49,7 +49,7 @@ def extract_data_from_excel(excel_file_path, output_json_path):
     df.fillna('', inplace=True)
 
     # Split 'Recognition Type:' and 'Other Name(s):' columns on commas
-    df['Recognition Type:'] = df['Recognition Type:'].apply(lambda x: x.split(',') if x else [])
+    df['Recognition Type:'] = df['Recognition Type:'].apply(lambda x: [x] if x == "Evaluated, but not a Heritage Property" else x.split(','))
     df['Other Name(s):'] = df['Other Name(s):'].apply(lambda x: x.split(',') if x else [])
 
     # Convert to list of dictionaries
