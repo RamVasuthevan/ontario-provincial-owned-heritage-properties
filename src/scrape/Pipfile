@@ -4,15 +4,15 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-black = "*"
+black = "24.4.2"
 
 [packages]
-playwright = "*"
-beautifulsoup4 = "*"
-lxml = "*"
-pandas = "*"
-xlrd = "*"
-numpy = "*"
+playwright = "1.45.0"
+beautifulsoup4 = "4.12.3"
+lxml = "5.2.2"
+pandas = "2.2.2"
+xlrd = "2.0.1"
+numpy = "2.0.0"
 
 [requires]
 python_version = "3.12"
