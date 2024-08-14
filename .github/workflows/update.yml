@@ -29,8 +29,8 @@ jobs:
         echo "Python version: $(python --version)"
         pip install pipenv
         pipenv install
-        npm install
-        npm playwright install --with-deps
+        npm install playwright install --with-deps
+        npx playwright install 
 
     - name: Generate overview.json
       run: |
