@@ -29,8 +29,7 @@ jobs:
         echo "Python version: $(python --version)"
         pip install pipenv
         pipenv install
-        npm install
-        npm playwright install --with-deps
+        pipenv run playwright install --with-deps  # Install the necessary browser binaries
 
     - name: Generate overview.json
       run: |
