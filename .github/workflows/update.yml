@@ -34,7 +34,6 @@ jobs:
     - name: Generate overview.json
       run: |
         cd src/scrape
-        npx playwright install 
         pipenv run python main.py
 
     - name: Get current date
