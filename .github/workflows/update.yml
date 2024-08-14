@@ -31,6 +31,7 @@ jobs:
         pipenv install
         npm install
         npx playwright install --with-deps
+        playwright install
 
     - name: Generate overview.json
       run: |
