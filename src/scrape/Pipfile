@@ -7,11 +7,12 @@ verify_ssl = true
 black = "25.1.0"
 
 [packages]
-playwright = "1.52.0"
+playwright = "1.55.0"
 beautifulsoup4 = "4.13.4"
-lxml = "5.4.0"
+lxml = "6.0.2"
 pandas = "2.2.3"
-xlrd = "2.0.1"
+
+xlrd = "2.0.2"
 numpy = "2.3.4"
 
 [requires]
